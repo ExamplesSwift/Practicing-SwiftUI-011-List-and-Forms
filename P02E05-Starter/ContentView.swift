@@ -31,8 +31,13 @@ import SwiftUI
 struct ContentView: View {
   
   var body: some View {
+      
     List {
-      ForEach(0..<5) { Text("\($0)").tag($0) }
+
+      Section(header: Text("Main Treats"), footer: Text("More coming soon...")) {
+        ForEach(0..<5) { Text("\($0)").tag($0) }
+      }
+      
     }
   }
 }
