@@ -31,7 +31,7 @@ import SwiftUI
 struct ContentView: View {
   
   var body: some View {
-    VStack {
+    List {
       ForEach(0..<5) { Text("\($0)").tag($0) }
     }
   }
